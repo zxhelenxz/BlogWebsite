@@ -3,6 +3,9 @@
 <p><%= startingcontent %></p>
 <% contents.forEach(function(element){ %>
     <h1><%= element.post %></h1>
-    <p><%= element.content.substring(0,100) +"..." %></p>
+    <p><%= element.content.substring(0,100) +"..." %><
+        <a href="/Titles/<%= element.post%>">Read More</a>
+    </p>
+    
 <%}) %>
 <%- include("layout/footer");-%>
