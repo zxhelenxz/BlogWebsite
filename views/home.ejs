@@ -2,6 +2,7 @@
 <h1>home</h1>
 <p><%= startingcontent %></p>
 <% contents.forEach(function(element){ %>
-    <% console.log(element.title); %>
+    <h1><%= element.post %></h1>
+    <p><%= element.content %></p>
 <%}) %>
 <%- include("layout/footer");-%>
