@@ -3,6 +3,6 @@
 <p><%= startingcontent %></p>
 <% contents.forEach(function(element){ %>
     <h1><%= element.post %></h1>
-    <p><%= element.content %></p>
+    <p><%= element.content.substring(0,100) +"..." %></p>
 <%}) %>
 <%- include("layout/footer");-%>
