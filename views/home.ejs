@@ -1,4 +1,7 @@
 <%- include("layout/header");-%>
 <h1>home</h1>
 <p><%= startingcontent %></p>
+<% contents.forEach(function(element){ %>
+    <% console.log(element.title); %>
+<%}) %>
 <%- include("layout/footer");-%>
