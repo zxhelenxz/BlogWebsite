@@ -1,0 +1,12 @@
+<%- include("layout/header");-%>
+    <h1>Compose</h1>
+    <form class="" action="/compose" method="post">
+        <h3>Title</h3>
+        <input type="text" name="postTitle">
+        <h3>Post</h3>
+        <textarea rows="5" cols="60" name="description">
+                    Enter details here...
+        </textarea><br>
+        <button type="submit" name="button" >Publish</button>
+    </form>
+    <%- include("layout/footer");-%>
